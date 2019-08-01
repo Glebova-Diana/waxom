@@ -1,0 +1,75 @@
+<div class="wrapper">
+  <h3 class="wrapper__headline">Our Latest Projects.</h3>
+  <p class="wrapper__text">Investigationes demonstraverunt lectores legere me lius quod
+    ii legunt saepius. Claritas est etiam processus
+    dynamicus, qui sequitur mutationem consuetudium.</p>
+  <main class="main">
+    <tabs id="tab">
+      <tab tabTitle="All" active="true">
+        <img *ngFor="let image of visibleImgArray" class="main__img" [src]="image.src" [alt]="image.alt">
+      </tab>
+      <tab tabTitle="Web Design">
+        <img *ngFor="let image of visibleImgArray" class="main__img" [src]="image.src" [alt]="image.alt">
+      </tab>
+      <tab tabTitle="Mobile App">
+        <img *ngFor="let image of visibleImgArray" class="main__img" [src]="image.src" [alt]="image.alt">
+      </tab>
+      <tab tabTitle="Illustration">
+        <img *ngFor="let image of visibleImgArray" class="main__img" [src]="image.src" [alt]="image.alt">
+      </tab>
+      <tab tabTitle="Photography">
+        <img *ngFor="let image of visibleImgArray" class="main__img" [src]="image.src" [alt]="image.alt">
+      </tab>
+      </tabs>
+    <div class="main__portfolio">
+      <!--<img *ngFor="let image of visibleImgArray" class="main__img" [src]="image.src" [alt]="image.alt">-->
+      <div class="main__box-button">
+        <button [disabled]="visibleImgArray.length === imageArray.length" class="main__load-more" type="button" (click)="loadMore()">Load More</button>
+      </div>
+    </div>
+
+
+
+    <div class="main__portfolio">
+      <figure class="main__box-photo">
+        <figcaption class="main__photo">
+          <h5 class="main__headline">Claritas Etiam Processus</h5>
+          <span class="main__photo-text">Photography, Nature</span>
+          <div class="main__triangle"></div>
+        </figcaption>
+        <img class="main__img2" src="../../assets/img/1-portf.jpg" alt="">
+        <div class="main__hover">
+          <a href="javascript:;">
+            <img class="main__photo-link" src="../../assets/img/link-portf-hover.png" alt="link"></a>
+          <img class="main__photo-lupa" src="../../assets/img/lupa-portf-hover.png" alt="lupa">
+        </div>
+      </figure>
+      <figure class="main__box-photo">
+        <figcaption class="main__photo">
+          <h5 class="main__headline">Claritas Etiam Processus</h5>
+          <span class="main__photo-text">Photography, Nature</span>
+          <div class="main__triangle"></div>
+        </figcaption>
+        <img class="main__img2" src="../../assets/img/1-portf.jpg" alt="">
+        <div class="main__hover">
+          <a href="javascript:;"><img class="main__photo-link" src="../../assets/img/link-portf-hover.png"
+                                      alt="link"></a>
+          <img class="main__photo-lupa" src="../../assets/img/lupa-portf-hover.png" alt="lupa">
+        </div>
+      </figure>
+      <figure class="main__box-photo">
+        <figcaption class="main__photo">
+          <h5 class="main__headline">Claritas Etiam Processus</h5>
+          <span class="main__photo-text">Photography, Nature</span>
+          <div class="main__triangle"></div>
+        </figcaption>
+        <img class="main__img2" src="../../assets/img/1-portf.jpg" alt="">
+        <div class="main__hover">
+          <a href="javascript:;"><img class="main__photo-link" src="../../assets/img/link-portf-hover.png"
+                                      alt="link"></a>
+          <img class="main__photo-lupa" src="../../assets/img/lupa-portf-hover.png" alt="lupa">
+        </div>
+      </figure>
+    </div>
+  </main>
+</div>
