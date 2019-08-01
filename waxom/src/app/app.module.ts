@@ -10,6 +10,8 @@ import { MobileInfoComponent } from './mobile-info/mobile-info.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { PostsComponent } from './posts/posts.component';
 import { ServicesComponent } from './services/services.component';
+import { RealizationComponent } from './realization/realization.component';
+import { PurchaseComponent } from './purchase/purchase.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ServicesComponent } from './services/services.component';
     MobileInfoComponent,
     AchievementsComponent,
     PostsComponent,
-    ServicesComponent
+    ServicesComponent,
+    RealizationComponent,
+    PurchaseComponent
   ],
   imports: [
     BrowserModule,
