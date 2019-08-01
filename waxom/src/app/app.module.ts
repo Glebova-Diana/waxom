@@ -9,6 +9,7 @@ import {TabModule} from 'angular-tabs-component';
 import { MobileInfoComponent } from './mobile-info/mobile-info.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { PostsComponent } from './posts/posts.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PostsComponent } from './posts/posts.component';
     PortfolioComponent,
     MobileInfoComponent,
     AchievementsComponent,
-    PostsComponent
+    PostsComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
