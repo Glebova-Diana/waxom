@@ -1,0 +1,163 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  height: 100vh;
+  max-width: 1175px;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+}
+
+.wrapper__headline {
+  margin: 0 0 20px;
+
+  font-size: 30px;
+  font-family: var(--main-font);
+  color: #555555;
+}
+
+.wrapper__text {
+  width: 65%;
+  margin: 0 0 40px;
+
+  font-size: 16px;
+  font-family: var(--font);
+  color: #8c8c8c;
+  text-align: center;
+}
+
+/* MAIN */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__photo-box {
+  position: relative;
+  height: 360px;
+  width: 31%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.main__photo-box:hover  {
+}
+
+.main__photo-box:hover .main__title-box {
+  background: #362f2d;
+  border: none;
+}
+
+.main__photo-box:hover .main__title {
+  color: #c7b299;
+}
+
+.main__photo-box:hover .main__description {
+  color: var(--white);
+}
+
+.main__photo-box:hover .main__number {
+  background: #c7b299;
+}
+
+.main__photo-box:hover .main__month {
+  background: #a48d72;
+}
+
+.main__photo-box:hover .main__img-box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 215px;
+  background: rgba(0, 0, 0, .5);
+}
+
+.main__img {
+  height: 215px;
+  width: 100%;
+}
+
+.main__title-box {
+  position: absolute;
+  width: 100%;
+  top: 215px;
+  padding: 0 0 0 30px;
+
+  border-right: 1px solid #f8f8f8;
+  border-bottom: 1px solid #f8f8f8;
+  border-left: 1px solid #f8f8f8;
+  background: transparent;
+}
+
+.main__title {
+  padding: 15px 0 15px 0;
+
+  font-size: 20px;
+  font-family: var(--main-font);
+  color: #555555;
+}
+
+.main__description {
+  display: flex;
+  width: 90%;
+  margin: 0 0 15px 0;
+
+  font-weight: lighter;
+  font-size: 14px;
+  font-family: var(--font);
+  color: #8c8c8c;
+  line-height: 20px;
+}
+
+.main__read-more {
+  display: flex;
+  width: max-content;
+  margin: 0 0 10px 0;
+
+  font-weight: lighter;
+  font-size: 14px;
+  font-family: var(--font);
+  color: #c7b299;
+  text-decoration: none;
+}
+
+.main__triangle {
+  width: 0;
+  height: 0;
+  margin: 4px 0 0 10px;
+  border-top: 5px solid transparent;
+  border-left: 5px solid #c7b299;
+  border-bottom: 5px solid transparent;
+}
+
+.main__data {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.main__number {
+  display: flex;
+  padding: 5px 10px;
+
+  font-weight: lighter;
+  font-size: 20px;
+  font-family: var(--font);
+  color: var(--white);
+  background: #363636;
+  border-radius: 3px 3px 0 0;
+}
+
+.main__month {
+  display: flex;
+  padding: 5px 10px;
+
+  font-weight: lighter;
+  font-size: 12px;
+  font-family: var(--font);
+  color: var(--white);
+  background: #252525;
+  border-radius: 0 0 3px 3px;
+}

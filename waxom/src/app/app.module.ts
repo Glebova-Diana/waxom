@@ -8,6 +8,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import {TabModule} from 'angular-tabs-component';
 import { MobileInfoComponent } from './mobile-info/mobile-info.component';
 import { AchievementsComponent } from './achievements/achievements.component';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AchievementsComponent } from './achievements/achievements.component';
     HomeComponent,
     PortfolioComponent,
     MobileInfoComponent,
-    AchievementsComponent
+    AchievementsComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
