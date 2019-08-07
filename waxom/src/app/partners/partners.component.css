@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  background: url("../../assets/img/back-partners.jpg");
+  background-size: cover;
+  height: 35vh;
+}
+
+.sub-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  max-width: 1175px;
+  margin: 0 auto;
+}
+
+.sub-wrapper__img {
+  width: 15%;
+  margin: 0 auto;
+}

@@ -12,6 +12,8 @@ import { PostsComponent } from './posts/posts.component';
 import { ServicesComponent } from './services/services.component';
 import { RealizationComponent } from './realization/realization.component';
 import { PurchaseComponent } from './purchase/purchase.component';
+import { PartnersComponent } from './partners/partners.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { PurchaseComponent } from './purchase/purchase.component';
     PostsComponent,
     ServicesComponent,
     RealizationComponent,
-    PurchaseComponent
+    PurchaseComponent,
+    PartnersComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
