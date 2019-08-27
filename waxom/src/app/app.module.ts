@@ -14,6 +14,7 @@ import { RealizationComponent } from './realization/realization.component';
 import { PurchaseComponent } from './purchase/purchase.component';
 import { PartnersComponent } from './partners/partners.component';
 import { FooterComponent } from './footer/footer.component';
+import {AnimateOnScrollModule} from 'ng2-animate-on-scroll';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     SwiperModule,
-    TabModule
+    TabModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

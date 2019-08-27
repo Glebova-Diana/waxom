@@ -40,6 +40,14 @@
   width: 31%;
   z-index: 1;
   cursor: pointer;
+  opacity: 0;
+  transition-duration: 2s;
+  transform: rotateY(180deg);
+}
+
+.main__photo-box--animated {
+  opacity: 1;
+  transform: rotateY(0deg);
 }
 
 .main__photo-box:hover  {
@@ -140,6 +148,8 @@
 
 .main__number {
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5px 10px;
 
   font-weight: lighter;

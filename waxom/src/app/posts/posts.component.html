@@ -4,11 +4,11 @@
     ii legunt saepius. Claritas est etiam processus dynamicus,
     qui sequitur mutationem consuetudium.</span>
   <main class="main">
-    <div class="main__photo-box">
+    <div class="main__photo-box" animateOnScroll animationName="main__photo-box--animated">
       <div class="main__img-box"></div>
-      <img class="main__img" src="../../assets/img/1-photo-post.jpg" alt="First photo">
+      <img class="main__img" src="./assets/img/1-photo-post.jpg" alt="First photo">
       <div class="main__title-box">
-        <h4 class="main__title">Lorem ipsum dolor sit amet</h4>
+        <h4 class="main__title">Omne caput capitis nomine</h4>
         <span class="main__description">Claritas est etiam processus dynamicus,
         qui sequitur.</span>
         <a class="main__read-more" href="javascript:;">
@@ -17,15 +17,15 @@
         </a>
       </div>
       <div class="main__data">
-        <span class="main__number">30</span>
-        <span class="main__month">Sep.</span>
+        <span class="main__number">{{beforeYesterday.getDate()}}</span>
+        <span class="main__month">{{beforeYesterday.toLocaleString('en', { month: 'short' })}}.</span>
       </div>
     </div>
-    <div class="main__photo-box">
+    <div class="main__photo-box" animateOnScroll animationName="main__photo-box--animated">
       <div class="main__img-box"></div>
-      <img class="main__img" src="../../assets/img/2-photo-post.jpg" alt="Second photo">
+      <img class="main__img" src="./assets/img/2-photo-post.jpg" alt="Second photo">
       <div class="main__title-box">
-        <h4 class="main__title">Lorem ipsum dolor sit amet</h4>
+        <h4 class="main__title">Omne caput capitis nomine</h4>
         <span class="main__description">Claritas est etiam processus dynamicus,
         qui sequitur.</span>
         <a class="main__read-more" href="javascript:;">
@@ -34,15 +34,15 @@
         </a>
       </div>
       <div class="main__data">
-        <span class="main__number">30</span>
-        <span class="main__month">Sep.</span>
+        <span class="main__number">{{yesterday.getDate()}}</span>
+        <span class="main__month">{{yesterday.toLocaleString('en', { month: 'short' })}}.</span>
       </div>
     </div>
-    <div class="main__photo-box">
+    <div class="main__photo-box" animateOnScroll animationName="main__photo-box--animated">
       <div class="main__img-box"></div>
-      <img class="main__img" src="../../assets/img/3-photo-post.jpg" alt="Third photo">
+      <img class="main__img" src="./assets/img/3-photo-post.jpg" alt="Third photo">
       <div class="main__title-box">
-        <h4 class="main__title">Lorem ipsum dolor sit amet</h4>
+        <h4 class="main__title">Omne caput capitis nomine</h4>
         <span class="main__description">Claritas est etiam processus dynamicus,
         qui sequitur.</span>
         <a class="main__read-more" href="javascript:;">
@@ -51,8 +51,8 @@
         </a>
       </div>
       <div class="main__data">
-        <span class="main__number">30</span>
-        <span class="main__month">Sep.</span>
+        <span class="main__number">{{today.getDate()}}</span>
+        <span class="main__month">{{today.toLocaleString('en', { month: 'short' })}}.</span>
       </div>
     </div>
   </main>

@@ -43,6 +43,14 @@
   width: 31%;
 
   cursor: pointer;
+  transition-duration: 2s;
+  transform: rotateY(-90deg);
+  opacity: 0;
+}
+
+.main__box-photo--animated {
+  transform: rotateY(0deg);
+  opacity: 1;
 }
 
 .main__box-button {
@@ -54,7 +62,7 @@
 .main__load-more {
   height: 45px;
   width: 155px;
-  margin: 10px 0 100px 0;
+  margin: 10px 0 50px 0;
 
   font-weight: bold;
   font-size: 13px;

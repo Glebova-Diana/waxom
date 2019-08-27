@@ -1,8 +1,8 @@
 <div class="wrapper">
   <div class="sub-wrapper">
-    <header class="header">
+    <header class="header" animateOnScroll animationName="header--animated">
       <div class="header__logo">
-        <img src="../../assets/img/logo.png" alt="logo">
+        <img src="./assets/img/logo.png" alt="logo">
         <span class="header__logo-text">Waxom</span>
       </div>
       <div class="header__menu">
@@ -17,12 +17,14 @@
           <a class="header__link" href="javascript:;">Contact</a>
         </div>
         <a href="javascript:;" class="header__cart">
-          <img src="../../assets/img/cart.png" alt="cart">
+          <img src="./assets/img/cart.png" alt="cart">
         </a>
-        <button type="button" class="header__search" (click)="myFunction()">
-          <img src="../../assets/img/search.png" alt="search">
-          <input type="text" id="header__search-block" placeholder="Search">
-        </button>
+        <div class="header__button-search">
+          <button type="button" class="header__search" (click)="myFunction()">
+            <img src="./assets/img/search.png" alt="search">
+          </button>
+          <input type="text" id="header__search-block" class="header__search-block" placeholder="Search">
+        </div>
       </div>
     </header>
 

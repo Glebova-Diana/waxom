@@ -20,12 +20,28 @@ export class HomeComponent implements OnInit {
       clickable: true,
     },
   };
-  constructor() { }
+
+  // window.onload = function(){
+  //   const hideMe = document.getElementById('hideMe');
+  //   document.onclick = function(e){
+  //     if (e.target.id !== 'hideMe'){
+  //       hideMe.style.display = 'none';
+  //     }
+  //   };
+  // };
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
   myFunction() {
-    document.getElementById('header__search-block').style.visibility = 'visible';
+    const input = document.getElementById('header__search-block');
+    if (!input.classList.contains('header__search-block--active')) {
+      input.classList.add('header__search-block--active');
+      input.focus();
+    } else {
+      input.classList.remove('header__search-block--active');
+    }
   }
 }
