@@ -113,7 +113,7 @@ export class PortfolioComponent implements OnInit {
       text: 'Graphic Design, Mock-Up'
     },
     {
-      src: '../../assets/img/6-portf.jpg',
+      src: '../../assets/img/12-portf.jpg',
       alt: 'portfolio photo 6',
       headline: 'Usus Legentis Videntur',
       text: 'Photography, Holiday'
@@ -165,7 +165,7 @@ export class PortfolioComponent implements OnInit {
     this.visibleImgArray = this.visibleImgArray.concat(this.imageArray.slice(0, 6));
     this.visibleImgArrayDesign = this.visibleImgArrayDesign.concat(this.imageArrayDesign.slice(0, 6));
     this.visibleImgArrayApp = this.visibleImgArrayApp.concat(this.imageArray.slice(0, 6));
-    this.visibleImgArrayIllustration = this.visibleImgArrayIllustration.concat(this.imageArray.slice(0, 6));
+    this.visibleImgArrayIllustration = this.visibleImgArrayIllustration.concat(this.imageArrayDesign.slice(0, 6));
     this.visibleImgArrayPhotography = this.visibleImgArrayPhotography.concat(this.imageArray.slice(0, 6));
   }
 
@@ -173,7 +173,7 @@ export class PortfolioComponent implements OnInit {
   }
 
   loadMore(arrayName) {
-    if (arrayName === 'visibleImgArrayDesign') {
+    if (arrayName === 'visibleImgArrayDesign' || arrayName === 'visibleImgArrayIllustration') {
       this[arrayName] = this[arrayName].concat(this.imageArrayDesign.slice(this[arrayName].length, this[arrayName].length + 6));
     } else {
       this[arrayName] = this[arrayName].concat(this.imageArray.slice(this[arrayName].length, this[arrayName].length + 6));
