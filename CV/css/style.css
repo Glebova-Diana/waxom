@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    width: 630px;
+    margin: 0 auto;
+
+    border: 1px solid #565656;
+}
+
+.card-block {
+    width: 33%;
+
+    /*background: #dd38d3;*/
+    background: #38a4dd;
+    border-right: .5px solid #cfcfcf;
+}
+
+.main__photo {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo {
+    height: 250px;
+}
+
+.name {
+    margin: -45px 0 0 43px;
+
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Roboto;
+    color: white;
+}
+
+.post {
+    margin: 0 0 25px 45px;
+
+    font-size: 10px;
+    font-family: 'Open Sans';
+    color: white;
+    text-transform: uppercase;
+}
+
+.description {
+    display: flex;
+    margin: 0 0 0 15px;
+}
+
+.person {
+    height: 20px;
+    margin: 0 10px 0 0;
+}
+
+.person {
+    width: 20px;
+    fill: white;
+}
+
+.description-box {
+    width: 100%;
+    margin: -4px 0 20px 0;
+
+    border-bottom: 0.5px solid #1b87c9;
+}
+
+.description__text {
+    display: block;
+    width: 88%;
+
+    padding: 0 0 20px 0;
+
+    font-size: 9px;
+    font-family: Roboto;
+    color: white;
+    line-height: 15px;
+    text-align: justify;
+}
+
+.email {
+    display: flex;
+    margin: 0 0 20px 15px;
+}
+
+.envelope {
+    width: 20px;
+}
+
+.email-box {
+    width: 100%;
+    padding: 3px 0 20px 0;
+    border-bottom: 1px solid #1b87c9;
+}
+
+.email-text {
+    display: block;
+    width: 88%;
+
+    font-size: 10px;
+    font-family: Roboto;
+    color: white;
+}
+
+.phone {
+    display: flex;
+    margin: 0 0 20px 15px;
+}
+
+.mobile {
+    width: 15px;
+    height: 15px;
+    fill: white;
+    margin: 0 14px 0 0;
+}
+
+.phone-box {
+    width: 100%;
+    padding: 0 0 20px 0;
+    border-bottom: 1.3px solid #1b87c9;
+}
+
+.phone-text {
+    display: block;
+    width: 88%;
+
+    font-size: 10px;
+    font-family: Roboto;
+    color: white;
+    line-height: 18px;
+}
+
+.skills {
+    display: flex;
+    margin: 0 0 0 15px;
+}
+
+.skills-box {
+    width: 100%;
+    margin: 0px 0 20px 0;
+
+    border-bottom: 1.5px solid #1b87c9;
+}
+
+.skills-headline {
+    font-size: 14px;
+    font-family: Roboto;
+    color: white;
+}
+
+.skills-point {
+    margin: 10px 0 20px 20px;
+
+    font-size: 10px;
+    font-family: Roboto;
+    color: white;
+    line-height: 20px;
+}
+
+.english-knowledge {
+    display: flex;
+    margin: 0 0 20px 15px;
+}
+
+.english {
+    width: 17px;
+}
+
+.english-text {
+    font-size: 14px;
+    font-family: Roboto;
+    color: white;
+}
+
+/* MAIN */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 67%;
+    background: #e3e3e3;
+}
+
+.goals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 370px;
+    margin: 25px 10px 0 0;
+    padding: 25px 0 0 20px;
+
+    background: white;
+    border: .5px solid #dfdfdf;
+}
+
+.goals-box {
+    display: flex;
+}
+
+.check {
+    width: 15px;
+    height: 15px;
+    margin: 0 17px 0 0;
+    fill: #838383;
+
+}
+
+.goals-headline {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Roboto;
+    color: #838383;
+}
+
+.goals-text {
+    margin: 10px 0 15px 50px;
+
+    font-size: 12px;
+    font-family: Roboto;
+    color: #838383;
+    line-height: 22px;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 370px;
+    margin: 30px 10px 0 0;
+    padding: 25px 0 0 20px;
+
+    background: white;
+    border: .5px solid #dfdfdf;
+}
+
+.headline-box {
+    display: flex;
+    align-items: center;
+}
+
+.hat {
+    height: 20px;
+    width: 20px;
+    fill: #838383;
+    margin: 0 15px 0 0;
+}
+
+.education-headline {
+    margin: 1px 0 0 0;
+
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Roboto;
+    color: #838383;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 5px 35px;
+}
+
+.title {
+    margin: 0 0 10px 0;
+
+    font-size: 12px;
+    font-family: Roboto;
+    color: #838383;
+}
+
+.year {
+    margin: 0 0 10px 0;
+
+    font-size: 10px;
+    font-family: Roboto;
+    color: #69b2e2;
+}
+
+.degree {
+    margin: 0 0 15px 0;
+
+    font-size: 10px;
+    font-family: Roboto;
+    color: #838383;
+}
+
+.interests {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 370px;
+    margin: 30px 10px 20px 0;
+    padding: 25px 0 0 20px;
+
+    background: white;
+    border: .5px solid #dfdfdf;
+}
+
+.interests-box {
+    display: flex;
+    margin: 0 0 15px 0;
+}
+
+.flower {
+    width: 15px;
+    height: 15px;
+    fill: #838383;
+    margin: 0 20px 0 0;
+}
+
+.interests-headline {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Roboto;
+    color: #838383;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+    margin: 0px 0 20px 34px;
+}
+
+.tennis {
+    width: 45px;
+    height: 45px;
+    fill: #35a3dd;
+}
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 370px;
+    margin: 30px 10px 0 0;
+    padding: 25px 0 0 20px;
+
+    background: white;
+    border: .5px solid #dfdfdf;
+}
+
+.award {
+    width: 15px;
+    height: 15px;
+    fill: #838383;
+    margin: 0 15px 0 0;
+}
+
+.achievement-headline {
+    margin: 0 0 0 0;
+
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Roboto;
+    color: #838383;
+}
+
+.achievement-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0 0 35px;
+}
+
+.achievement-txt--block {
+    display: flex;
+    align-items: baseline;
+}
+
+.achievement-txt--block--last {
+    margin: 0 0 10px 0;
+}
+
+.achievement-txt {
+    /*width: 100%;*/
+    margin: 0 0 10px 0;
+
+    font-size: 10px;
+    font-family: Roboto;
+    color: #838383;
+}
+
+.git {
+    margin: 0 5px 10px 0;
+    font-size: 12px;
+}
+
+.git--bold {
+    font-weight: bold;
+}
+
+.link {
+    color: #69b2e2;
+}
+
+.achieve {
+    width: 45px;
+    height: 45px;
+    fill: #35a3dd;
+    margin: 10px 0 20px 0;
+}
