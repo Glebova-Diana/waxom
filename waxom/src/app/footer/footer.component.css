@@ -187,12 +187,12 @@
   width: 48%;
   height: 80px;
   margin: 0 0 10px 0;
-  transition: 1s;
+  /*transition: 1s;*/
 }
 
-.sub-wrapper__img-dribbble:hover {
-  transform: scale(2);
-}
+/*.sub-wrapper__img-dribbble:hover {*/
+  /*transform: scale(2);*/
+/*}*/
 
 /* FOOTER */
 

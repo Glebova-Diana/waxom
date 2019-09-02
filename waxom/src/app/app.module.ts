@@ -34,7 +34,7 @@ import {AnimateOnScrollModule} from 'ng2-animate-on-scroll';
     BrowserModule,
     SwiperModule,
     TabModule,
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
