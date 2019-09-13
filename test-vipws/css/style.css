@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: bisque;
+}
+
+.header {
+    background: #ffffff;
+}
+
+.header__menu-links {
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    list-style: none;
+}
+
+.header__links {
+    display: flex;
+    position: relative;
+    border-right: 1px solid #c7c8ca;
+}
+
+.header__links:hover .header__menu-links--2level {
+    display: block;
+}
+
+.header__link {
+    display: block;
+    padding: 15px 30px;
+
+    color: #454547;
+    background: #ffffff;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.header__links:first-child {
+    border-left: 1px solid #c7c8ca;
+}
+
+.header__link:hover {
+    color: #ffffff;
+    background: #454547;
+    transition: all .3s ease;
+    box-shadow: 1px 5px 10px -5px black;
+}
+
+.header__link--arrow {
+    position: absolute;
+    top: 19px;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    transition: all .3s ease;
+}
+
+.header__link--arrow2 {
+    top: 13px;
+    transition: all .3s ease;
+}
+
+.header__link--arrow path {
+    fill: #454547;
+    transition: all .3s ease;
+}
+
+.header__link:hover .header__link--arrow path {
+    fill: #ffffff;
+    transition: all .3s ease;
+}
+
+.header__menu-links--2level {
+    position: absolute;
+    min-width: 155px;
+    top: 50px;
+    font-size: 13px;
+    display: none;
+}
+
+.header__links--2level {
+    border-right: 1px solid #c7c8ca;
+    border-bottom: 1px solid #c7c8ca;
+    border-left: 1px solid #c7c8ca;
+}
+
+.header__links--2level:hover .header__menu-links--3level {
+    display: block;
+}
+
+.header__links--2level:first-child {
+    border-top: 1px solid #c7c8ca;
+}
+
+.header__link--2level {
+    min-width: 155px;
+    padding: 10px;
+}
+
+.header__menu-links--3level {
+    position: absolute;
+    min-width: 155px;
+    font-size: 13px;
+    right: -157px;
+    top: -1px;
+    display: none;
+}
+
+.header__menu-links--4level {
+    position: absolute;
+    min-width: 155px;
+    font-size: 13px;
+    right: -161px;
+    top: -1px;
+    display: none;
+}
+
+.header__links--3level:hover .header__menu-links--4level{
+    display: block;
+}
