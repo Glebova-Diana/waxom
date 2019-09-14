@@ -126,19 +126,22 @@ body {
 /* MAIN */
 
 .main {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-    margin: 10px;
+    display: flex;
+    flex-flow: column wrap; /* Shorthand – you could use ‘flex-direction: column’ and ‘flex-wrap: wrap’ instead */
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 1100px;
 }
 
 .main__card {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    padding: 10px;
     background: white;
     border-radius: 5px;
+    width: 31%;
+    margin: 1%;
+    padding: 10px;
 }
 
 .main__profile {
