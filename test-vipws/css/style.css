@@ -127,10 +127,11 @@ body {
 
 .main {
     display: flex;
-    flex-flow: column wrap; /* Shorthand – you could use ‘flex-direction: column’ and ‘flex-wrap: wrap’ instead */
+    flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 1100px;
+    height: 1200px;
+    padding: 10px;
 }
 
 .main__card {
@@ -142,6 +143,29 @@ body {
     width: 31%;
     margin: 1%;
     padding: 10px;
+}
+
+@media (max-width: 1024px) {
+    .main{
+        height: 1300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main{
+        height: 1700px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main{
+        align-items: center;
+        height: auto;
+    }
+
+    .main__card {
+        width: 95%;
+    }
 }
 
 .main__profile {
@@ -214,17 +238,16 @@ body {
     cursor: pointer;
 }
 
-/* SECTION */
+/* SECTION SLIDER*/
 
 .slider {
     margin: 30px;
 }
 
 .slider__card {
-    display: flex;
+    display: flex!important;
     flex-direction: column;
     align-items: center;
-    width: 22%;
     padding: 15px 10px 10px;
     background: white;
     border-radius: 5px;
@@ -264,4 +287,49 @@ body {
 
 .slider__button-cart {
     margin-left: 5px;
+}
+
+/* SLIDER */
+
+.slick-dotted.slick-slider {
+    margin-bottom: 40px!important;
+}
+
+/* the slides */
+.slick-slide {
+    margin: 0 10px;
+}
+/* the parent */
+.slick-list {
+    margin: 0 -10px;
+}
+
+.slick-dots li {
+    height: 3px!important;
+}
+
+.slick-dots li button {
+    padding: 0!important;
+    height: 3px!important;
+}
+
+.slick-dots li button:before {
+    opacity: 1!important;
+    content: ''!important;
+    background: #4d3731!important;
+    height: 3px!important;
+}
+
+.slick-dots li.slick-active button:before {
+    background: #e7be36!important;
+}
+
+/* SECTION MENU */
+
+.section__menu {
+    padding: 10px;
+}
+
+.menu__button {
+
 }
