@@ -22,8 +22,7 @@ body {
 
 .grid-item {
     width: 300px;
-    /*float: left;*/
-    margin: 20px 0 10px 10px;
+    margin: 10px 0 10px 10px;
 
     border-radius: 5px;
     background: #ffffff;
