@@ -9,6 +9,7 @@ body {
 }
 
 .grid-item {
+    display: inline-block;
     max-width: 300px;
     margin: 10px;
     /*color: white;*/
@@ -116,4 +117,22 @@ body {
     border-radius: 50px;
     outline: none;
     cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        column-count: 1;
+    }
+
+    .grid-item {
+        max-width: 400px;
+    }
 }
