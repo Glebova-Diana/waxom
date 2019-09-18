@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*.item {*/
+    /*width: 220px;*/
+    /*margin: 10px;*/
+    /*float: left;*/
+    /*color: white;*/
+    /*background: #000066;*/
+/*}*/
+
+.grid-item {
+    margin: 10px;
+    color: white;
+    background: #000066;
+}
