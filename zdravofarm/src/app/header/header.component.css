@@ -1,0 +1,25 @@
+.header {
+  /*position: fixed;*/
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  background: #ff9017;
+}
+
+.header__logo {
+  width: 42px;
+}
+
+.header__cart {
+  width: 22px;
+  height: 22px;
+}
+
+.header__burger-menu {
+  width: 20px;
+  height: 15px;
+}
